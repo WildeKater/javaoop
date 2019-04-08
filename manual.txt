@@ -1,4 +1,0 @@
-manual
-test
-ttest
-tttest
