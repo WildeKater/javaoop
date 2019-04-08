@@ -1,7 +1,11 @@
 package com.gmail.wildekatertz;
 
-public class Vector3d {
+public class Vector3d implements java.io.Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5333906851412500839L;
 	private double x;
 	private double y;
 	private double z;
