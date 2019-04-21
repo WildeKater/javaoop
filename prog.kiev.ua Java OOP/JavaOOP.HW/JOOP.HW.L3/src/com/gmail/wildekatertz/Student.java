@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 package com.gmail.wildekatertz;
 
-public class Student extends Human implements java.io.Serializable{
+public class Student extends Human implements java.io.Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private static int studentNumber = 0;
 	private int studentId;
 
@@ -28,39 +27,17 @@ public class Student extends Human implements java.io.Serializable{
 	}
 
 	@Override
-	public String toString() {
-		return super.toString() + ", studentId=" + studentId + "]";
+	public boolean equals(Object obj) {
 
-	}
+		Student student = (Student) obj;
 
-}
-=======
-package com.gmail.wildekatertz;
+		if ((obj != null) && (this.getStudentId() == student.getStudentId()) && (this.getName() == student.getName())
+				&& (this.getGender() == student.getGender()) && (this.getAge() == student.getAge())) {
+			return true;
+		} else {
+			return false;
+		}
 
-public class Student extends Human implements java.io.Serializable{
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	
-	private static int studentNumber = 0;
-	private int studentId;
-
-	public Student() {
-		super();
-		studentNumber++;
-		this.studentId = studentNumber;
-	}
-
-	public Student(String name, Genders gender, int age) {
-		super(name, gender, age);
-		studentNumber++;
-		this.studentId = studentNumber;
-	}
-
-	public int getStudentId() {
-		return studentId;
 	}
 
 	@Override
@@ -70,4 +47,3 @@ public class Student extends Human implements java.io.Serializable{
 	}
 
 }
->>>>>>> e446c261d440895654a42ad804452593770b1523
