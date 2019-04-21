@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
-//		Student testStudent = new Student();
-//		testStudent.interactiveAdd(testStudent);
+		Student testStudent = new Student();
+		testStudent.interactiveAdd(testStudent);
 
 		Student humanOne = new Student("Alpha", Genders.MALE, 18);
 		Student humanTwo = new Student("Beta", Genders.MALE, 16);
@@ -34,7 +34,7 @@ public class Main {
 		System.out.println();
 
 		Group gr = new Group(humanOne, humanTwo, humanThree, humanFour);
-		//gr.addStudent(testStudent);
+		gr.addStudent(testStudent);
 		gr.addStudent(humanFive);
 		gr.addStudent(humanSix);
 		gr.addStudent(humanSeven);
@@ -57,18 +57,13 @@ public class Main {
 
 		Student[] armyList = gr.armyList();
 		System.out.println("Призывники:");
+
 		for (Student i : armyList) {
-			if (i != null) {
-				System.out.println(i);
-			}
+			System.out.println(i);
 		}
 
-		System.out.println(humanTwo.getGender().ordinal());
-		System.out.println(humanFour.getGender().ordinal());
-		
 		System.out.println();
 		gr.sortGroupBy();
-		System.out.println(gr);
 
 	}
 
