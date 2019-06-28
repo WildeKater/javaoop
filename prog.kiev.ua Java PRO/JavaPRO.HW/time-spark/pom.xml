@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.gmail.wildekatertz</groupId>
-	<artifactId>test-spark</artifactId>
+	<artifactId>time-spark</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>test-spark</name>
+	<name>time-spark</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

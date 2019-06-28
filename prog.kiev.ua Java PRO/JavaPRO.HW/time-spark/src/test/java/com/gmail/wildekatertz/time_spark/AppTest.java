@@ -1,4 +1,4 @@
-package com.gmail.wildekatertz.test_spark;
+package com.gmail.wildekatertz.time_spark;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
